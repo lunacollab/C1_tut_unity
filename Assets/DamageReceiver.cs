@@ -12,8 +12,10 @@ public class DamageReceiver : MonoBehaviour
   
     public virtual void Receive(int damage)
     {
-        if(this.IsDead()) this.playerCtrl.playerStatus.Dead();
-
+        if (this.IsDead()) 
+        {
+            this.playerCtrl.playerStatus.Dead();
+        }
     }
     
  

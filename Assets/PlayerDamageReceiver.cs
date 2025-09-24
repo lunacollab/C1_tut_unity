@@ -6,5 +6,9 @@ public class PlayerDamageReceiver : DamageReceiver
     {   
         base.Receive(damage);
         this.hp -= damage;
+        if (this.IsDead())
+        {
+            UiManager.instance.bnGameOver.SetActive(true);
+        }
     }
 }
