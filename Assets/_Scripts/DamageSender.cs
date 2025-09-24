@@ -12,6 +12,7 @@ public class DamageSender : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collision)
     {
         DamageReceiver damageReceiver = collision.GetComponent<DamageReceiver>();
+        if (damageReceiver == null) return;
 
         SelfDestroy selfDestroy = collision.GetComponent<SelfDestroy>();
         if (selfDestroy != null)

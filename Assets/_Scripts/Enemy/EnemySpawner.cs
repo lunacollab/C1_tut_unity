@@ -1,7 +1,10 @@
+using System.Collections.Generic;
 using UnityEngine;
 
 public class EnemySpawner : MonoBehaviour
 {
+    protected List<GameObject> enemies;
+    protected int maxEnemy = 1;
     protected GameObject enemyPrefab;
     protected float timer = 0;
     protected float delay = 2f;
@@ -26,5 +29,6 @@ public class EnemySpawner : MonoBehaviour
         GameObject enemy = Instantiate(this.enemyPrefab);
         enemy.transform.position = transform.position;
         enemy.SetActive(true);
+        this.enemies.Add(enemy);
     }
 }

@@ -61,20 +61,22 @@
     <Analyzer Include="C:\Program Files\Unity\Hub\Editor\6000.2.5f1\Editor\Data\Tools\Unity.SourceGenerators\Unity.UIToolkit.SourceGenerator.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\FollowPlayer.cs" />
-    <Compile Include="Assets\DamageReceiver.cs" />
-    <Compile Include="Assets\EnemySpawner.cs" />
-    <Compile Include="Assets\PlayerDamageReceiver.cs" />
-    <Compile Include="Assets\DamageSender.cs" />
-    <Compile Include="Assets\EnemyCtrl.cs" />
-    <Compile Include="Assets\SelfDestroy.cs" />
-    <Compile Include="Assets\PlayerStatus.cs" />
-    <Compile Include="Assets\UiManager.cs" />
-    <Compile Include="Assets\PlayerMovement.cs" />
-    <Compile Include="Assets\PlayerCtrl.cs" />
-    <Compile Include="Assets\GameManager.cs" />
-    <Compile Include="Assets\PlayerPosition.cs" />
-    <Compile Include="Assets\Despawner.cs" />
+    <Compile Include="Assets\_Scripts\Player\PlayerStatus.cs" />
+    <Compile Include="Assets\_Scripts\Road\RoadDespawner.cs" />
+    <Compile Include="Assets\_Scripts\DamageSender.cs" />
+    <Compile Include="Assets\_Scripts\UiManager.cs" />
+    <Compile Include="Assets\_Scripts\Enemy\EnemyCtrl.cs" />
+    <Compile Include="Assets\_Scripts\Road\RoadSpawner.cs" />
+    <Compile Include="Assets\_Scripts\GameManager.cs" />
+    <Compile Include="Assets\_Scripts\SelfDestroy.cs" />
+    <Compile Include="Assets\_Scripts\Player\PlayerPosition.cs" />
+    <Compile Include="Assets\_Scripts\DamageReceiver.cs" />
+    <Compile Include="Assets\_Scripts\Enemy\EnemySpawner.cs" />
+    <Compile Include="Assets\_Scripts\Player\PlayerDamageReceiver.cs" />
+    <Compile Include="Assets\_Scripts\Player\PlayerCtrl.cs" />
+    <Compile Include="Assets\_Scripts\Despawner.cs" />
+    <Compile Include="Assets\_Scripts\Player\PlayerMovement.cs" />
+    <Compile Include="Assets\_Scripts\FollowPlayer.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />

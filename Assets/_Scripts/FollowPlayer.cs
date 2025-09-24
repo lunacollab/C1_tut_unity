@@ -4,12 +4,17 @@ using UnityEngine.UIElements;
 public class FollowPlayer : MonoBehaviour
 {
     public Transform player;
-    protected float speed = 7f;
-    protected float disLimit = 0.5f;
+    public float speed = 27f;
+    public float disLimit = 3f;
 
     void Start()
     {
         Invoke("Follow()", 2f);
+    }
+
+    private void Awake()
+    {
+        this.player = PlayerCtrl.instance.transform;
     }
     // Update is called once per frame
     void Update()
