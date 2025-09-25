@@ -75,6 +75,8 @@
     <Compile Include="Assets\_Scripts\Player\PlayerDamageReceiver.cs" />
     <Compile Include="Assets\_Scripts\Player\PlayerCtrl.cs" />
     <Compile Include="Assets\_Scripts\Despawner.cs" />
+    <Compile Include="Assets\_Scripts\Spawner.cs" />
+    <Compile Include="Assets\_Scripts\Weapon\BomSpawner.cs" />
     <Compile Include="Assets\_Scripts\Player\PlayerMovement.cs" />
     <Compile Include="Assets\_Scripts\FollowPlayer.cs" />
   </ItemGroup>
