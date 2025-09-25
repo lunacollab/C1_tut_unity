@@ -11,6 +11,9 @@ public class DamageSender : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
+        // Chỉ xử lý collision với Player hoặc object có tag "Player"
+        if (!collision.CompareTag("Player") && collision.GetComponent<PlayerCtrl>() == null) return;
+
         DamageReceiver damageReceiver = collision.GetComponent<DamageReceiver>();
         if (damageReceiver == null) return;
 
@@ -19,8 +22,12 @@ public class DamageSender : MonoBehaviour
             selfDestroy.Destroy();
 
         if (damageReceiver != null)
+        {
             damageReceiver.Receive(1);
-            this.enemyCtrl.despawner.Despawn();
+            // Chỉ destroy enemy khi va chạm với Player
+            if (collision.GetComponent<PlayerCtrl>() != null)
+                this.enemyCtrl.despawner.Despawn();
+        }
     }
 
 
