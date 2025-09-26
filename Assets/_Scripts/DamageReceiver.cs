@@ -3,7 +3,9 @@ using UnityEngine;
 public class DamageReceiver : MonoBehaviour
 {   
     public PlayerCtrl playerCtrl;
-    protected int hp = 3; 
+
+    [Header("DamageReceiver")]
+    public int hp = 1; 
 
     public virtual bool IsDead()
     {
@@ -11,12 +13,8 @@ public class DamageReceiver : MonoBehaviour
     }
   
     public virtual void Receive(int damage)
-    {
-        if (this.IsDead()) 
-        {
-            this.playerCtrl.playerStatus.Dead();
-        }
+    {   
+        this.hp  -= damage;
     }
     
- 
 }
